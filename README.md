@@ -17,8 +17,12 @@ dan Navigation Compose.
 - `viewmodel` : SiswaViewModel
 
 ## Hasil
-### Halaman Form
-![Form](screenshots/form.png)
+
+### Halaman Form (kosong)
+![Form Kosong](screenshots/form_kosong.png)
+
+### Halaman Form (terisi)
+![Form Terisi](screenshots/form_terisi.png)
 
 ### Halaman Detail
 ![Detail](screenshots/detail.png)

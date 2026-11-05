@@ -1,4 +1,4 @@
-package com.example.myarsitekturmvvm.view
+package com.example.pertemuan8.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -32,13 +32,22 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.myarsitekturmvvm.R
+import com.example.pertemuan8.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormSiswa(
+    //edit 1 : parameter pilihanJK dan onSubmitButtonClicked
+    pilihanJK: List<String>,
+    onSubmitButtonClicked: (MutableList<String>) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    //edit 2 : tambahkan 4 variable dibawah ini
+    var txtNama by rememberSaveable { mutableStateOf("") }
+    var txtAlamat by remember { mutableStateOf("") }
+    var txtGender by remember { mutableStateOf("") }
+    val listData: MutableList<String> = mutableListOf(txtNama, txtGender, txtAlamat)
+
     Scaffold(
         modifier = modifier,
         topBar = {

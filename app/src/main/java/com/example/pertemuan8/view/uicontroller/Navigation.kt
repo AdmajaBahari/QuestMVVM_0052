@@ -55,9 +55,15 @@ fun SiswaApp(
                 TampilSiswa(
                     //edit 5 : parameter statusUiSiswa
                     statusUiSiswa = uiState.value,
-                    onBackButtonClicked = { }
+                    onBackButtonClicked = { cancelAndBackToFormulir(navController) }
                 )
             }
         }
     }
+}
+
+private fun cancelAndBackToFormulir(
+    navController: NavHostController
+) {
+    navController.popBackStack(Navigasi.Formulir.name, inclusive = false)
 }

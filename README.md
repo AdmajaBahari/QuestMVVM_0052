@@ -17,4 +17,8 @@ dan Navigation Compose.
 - `viewmodel` : SiswaViewModel
 
 ## Hasil
-(screenshot menyusul)
+### Halaman Form
+![Form](screenshots/form.png)
+
+### Halaman Detail
+![Detail](screenshots/detail.png)
